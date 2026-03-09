@@ -12,14 +12,14 @@ struct PlantCard: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // Plant Image
+            
             Image(plant.image)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 120)
                 .clipped()
             
-            // Plant Name
+           
             Text(plant.name)
                 .font(.system(.headline, design: .rounded))
                 .foregroundColor(.natureGreen)
