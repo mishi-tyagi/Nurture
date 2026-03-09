@@ -20,7 +20,7 @@ struct LandingView: View {
         GridItem(.flexible(), spacing: 16)
     ]
     
-    // Search Bar Logic
+   
     var filteredPlants: [Plant] {
         if searchText.isEmpty {
             return indoorPlants
@@ -38,7 +38,7 @@ struct LandingView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         
-                        // Header
+                        
                         VStack(alignment: .leading, spacing: 12) {
                             Text("My Green Space")
                                 .font(.system(size: 34, weight: .bold, design: .rounded))
@@ -57,7 +57,7 @@ struct LandingView: View {
                         }
                         .padding(.horizontal)
                         
-                        // Search Bar Presentation
+                        
                         HStack {
                             Image(systemName: "magnifyingglass")
                                 .foregroundColor(.gray)
@@ -78,7 +78,7 @@ struct LandingView: View {
                         .cornerRadius(15)
                         .padding(.horizontal)
                         
-                        // Search Bar Content
+                       
                         if filteredPlants.isEmpty && !searchText.isEmpty {
                             VStack(spacing: 15) {
                                 Spacer(minLength: 80)
