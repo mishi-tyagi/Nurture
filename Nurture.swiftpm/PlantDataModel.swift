@@ -11,9 +11,9 @@ import SwiftUI
 struct Plant: Identifiable, Hashable {
     let id = UUID()
     let name: String
-    let image: String // Use Asset names
-    let minTemp: Double // In Celsius
-    let maxTemp: Double // In Celsius
+    let image: String 
+    let minTemp: Double 
+    let maxTemp: Double 
     let humidityNeeded: String
     let lightRequirement: String
     let description: String
