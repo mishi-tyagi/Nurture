@@ -30,7 +30,7 @@ struct DetailView: View {
                     Image(plant.image)
                         .resizable()
                         .scaledToFill()
-                        .frame(height: 300) // Shortened height as requested
+                        .frame(height: 300) 
                         .frame(maxWidth: .infinity)
                         .cornerRadius(32)
                         .clipped()
